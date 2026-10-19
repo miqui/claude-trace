@@ -1,0 +1,12 @@
+[project]
+name = "claude-trace"
+version = "0.1.0"
+description = "OpenTelemetry tracing for the Claude API SDK and the Claude Agent SDK, exported to Jaeger"
+requires-python = ">=3.10"
+dependencies = [
+    # Pinned: SDK tracing is beta and span/option names may change between releases.
+    "anthropic==1.15.0",
+    "claude-agent-sdk==0.2.168",
+    "opentelemetry-sdk==1.45.1",
+    "opentelemetry-exporter-otlp-proto-http==1.45.1",
+]
